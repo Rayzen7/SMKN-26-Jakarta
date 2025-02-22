@@ -1,7 +1,7 @@
 @extends('admin.dashboard')
 
 @section('content')
-    <section class="w-full bg-bg_secondary h-[100vh] flex flex-col justify-center items-center">
+    <section class="w-full pl-[270px] my-12 h-[100vh] flex flex-col justify-center items-center">
         <div class="flex justify-start items-center px-[30px]">
             <h1 class="text-primary font-poppins_bold text-[32px] text-start">Formulir Informasi</h1>
         </div>

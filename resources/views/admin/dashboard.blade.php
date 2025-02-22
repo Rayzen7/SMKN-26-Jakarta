@@ -7,15 +7,15 @@
     <title>Admin Dashboard</title>
     @vite('resources/css/app.css')
 </head>
-<body class="bg-primary">
-    <section class="flex justify-between items-center">
-        <div class="absolute top-[20px] left-[20px] cursor-pointer">
+<body class="bg-bg_secondary">
+    <section class="flex justify-between items-start">
+        <div class="top-[20px] fixed z-20 left-[20px] cursor-pointer">
             <svg width="35" height="35" class="list fill-white" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.6665 10H9.99984V13.3333H6.6665V10ZM6.6665 18.3333H9.99984V21.6667H6.6665V18.3333ZM6.6665 26.6667H9.99984V30H6.6665V26.6667ZM33.3332 13.3333V10H13.3715V13.3333H31.3332H33.3332ZM13.3332 18.3333H33.3332V21.6667H13.3332V18.3333ZM13.3332 26.6667H33.3332V30H13.3332V26.6667Z"/>
             </svg>                
         </div>
         {{-- Navbar Start --}}
-        <nav class="bg-primary w-[300px] navbar h-[100vh] overflow-hidden flex flex-col justify-center items-center">
+        <nav class="bg-primary z-10 w-[270px] navbar h-[100vh] fixed overflow-hidden flex flex-col justify-center items-center">
             <div class="flex flex-col justify-center items-center gap-3">
                 <img src="{{ asset('icon/user.svg') }}" alt="" class="w-[50px] h-auto">
                 <p class="text-center font-poppins_medium text-[20px] text-white">{{ Auth::user()->name }}</p>
@@ -37,7 +37,7 @@
         </nav>
         {{-- Navbar End --}}
 
-        @yield('content')
+        @yield('content');
 
         {{-- message --}}
         @if(session('success'))

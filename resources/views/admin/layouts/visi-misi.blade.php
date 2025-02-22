@@ -1,7 +1,7 @@
 @extends('admin.dashboard')
 
 @section('content')
-    <section class="w-full bg-bg_secondary h-[100vh] flex flex-col justify-center items-center">
+    <section class="w-full pl-[270px] my-12 h-[100vh] flex flex-col justify-center items-center">
         <div class="w-[90%] bg-white p-4 py-8 rounded-lg">
             @foreach($visimisi as $visimisis)
             <div class="flex justify-between items-center px-[30px]">

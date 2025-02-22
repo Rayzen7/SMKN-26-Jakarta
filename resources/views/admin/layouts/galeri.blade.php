@@ -1,7 +1,7 @@
 @extends('admin.dashboard')
 
 @section('content')
-    <section class="w-full bg-bg_secondary h-auto py-[24px] flex flex-col justify-center items-center">
+    <section class="w-full pl-[270px] my-12 h-auto py-[24px] flex flex-col justify-center items-center">
         <div class="w-[90%] bg-white p-4 py-8 rounded-lg">
             <div class="flex justify-between items-center px-[30px]">
                 <h1 class="text-primary font-poppins_bold text-[32px]">Galeri</h1>
